@@ -1,0 +1,47 @@
+$brandcolours: (
+  'white': #fff,
+  'black': #000
+);
+
+$container-width: 1120px;
+$container-padding: 30px;
+$container-padding-narrow: 15px;
+
+$gutter-width: 30px;
+$gutter-width-narrow: 10px;
+
+$font-families: (
+  'light': ('Avenir Light', sans-serif),
+  'roman': ('Avenir Roman', sans-serif),
+  'roman-oblique': ('Avenir Roman Oblique', sans-serif),
+  'black': ('Avenir Black', sans-serif),
+  'black-oblique': ('Avenir Black Oblique', sans-serif),
+  serif: (Georgia, serif)
+);
+
+$font-sizes: (
+  'xxsmall': (font-size: 12, line-height: 1.333),
+  'xsmall': (font-size: 14, line-height: 1.333),
+  'small': (font-size: 16, line-height: 1.333),
+  'medium': (font-size: 18, line-height: 1.4),
+  'large': (font-size: 24, line-height: 1.25),
+  'xlarge': (font-size: 30, line-height: 1.2),
+  'xxlarge': (font-size: 36, line-height: 1.2),
+  'xxxlarge': (font-size: 48, line-height: 1.2),
+  'massive': (font-size: 60, line-height: 1.2),
+  'mega': (font-size: 72, line-height: 1.1)
+);
+
+$breakpoints: (
+  'xxxlarge': $container-width,
+  'xxlarge': 1000px,
+  'xlarge': 900px,
+  'large': 800px,
+  'medium': 700px,
+  'small': 600px,
+  'xsmall': 480px
+);
+
+// Empty map for respond-to mixin
+// Override in component Sass files
+$tweakpoints: ();
