@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "comma-dangle": 0,
+    "space-before-function-paren": 0,
+    "one-var": 0
+  },
+  "globals": {
+    "jQuery": true,
+    "$": true
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  }
+}

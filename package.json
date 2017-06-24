@@ -1,0 +1,45 @@
+{
+  "name": "joycevherck.com",
+  "version": "1.0.0",
+  "author": "Joyce Van Herck",
+  "description": "Frontend Developer and Cosplayer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joycevherck/joycevherck.com.git"
+  },
+  "scripts": {
+    "dist": "gulp dist",
+    "gulp": "gulp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "eslint": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "browserlist": [
+    "> 1%",
+    "last 2 versions",
+    "iOS >= 7"
+  ]
+}
