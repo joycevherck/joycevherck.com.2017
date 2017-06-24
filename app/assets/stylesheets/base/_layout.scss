@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.layout {
+  @include clearfix;
+  grid-template-columns: repeat(12, $column-width);
+  grid-column-gap: $column-gap;
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  @include supports-grid {
+    display: grid;
+
+    &:before,
+    &:after {
+      // clearfix breaks display grid so remove it
+      display: none;
+    }
+  }
+
+  @include respond-to('grid') {
+    margin: 0 $space-s;
+  }
+
+  @include respond-to('tablet') {
+    margin: 0 $space-mb-m;
+  }
+
+  @include respond-to('mobile') {
+    clear: both;
+    display: block;
+    margin: 0 $space-mb-s;
+  }
+}
+
+.layout--nogrid {
+  display: block;
+}
+
+.layout__column {
+  @include spacing('margin-bottom', 'space-l');
+  float: left;
+  padding-right: $column-gap;
+
+  @include supports-grid {
+    padding-left: 0;
+    padding-right: 0;
+
+    &.layout__column.layout__column--1,
+    &.layout__column.layout__column--2 {
+      width: auto;
+    }
+  }
+
+  @include respond-to('mobile') {
+    padding-right: 0;
+
+    &.layout__column.layout__column--1,
+    &.layout__column.layout__column--2 {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+.layout__column--nomargin {
+  margin-bottom: 0;
+}
+
+.layout--12 .layout__column {
+  grid-column-end: span 12;
+  float: none;
+}

@@ -1,0 +1,55 @@
+// Stolzl Display was created by Mariya V Pigoulevskaya, inspired by Bauhaus. Specifically, Gunta Stolzl, the school’s only female master. Gunta ran her workshop from 1926 onwards, and considered it a place for experimentation and encouraged innovation.
+@font-face {
+  font-family: 'stolzl-display';
+  src: url('../fonts/stolzl_display_w00_medium.eot');
+  src: url('../fonts/stolzl_display_w00_medium.eot?#iefix') format('eot'),
+    url('../fonts/stolzl_display_w00_medium.woff2') format('woff2'),
+    url('../fonts/stolzl_display_w00_medium.woff') format('woff'),
+    url('../fonts/stolzl_display_w00_medium.ttf') format('truetype'),
+    url('../fonts/stolzl_display_w00_medium.svg#f2bf489f-d58b-4625-980f-8757b63ed83a') format('svg');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'stolzl';
+  src: url('../fonts/stolzl_w00_medium.eot');
+  src: url('../fonts/stolzl_w00_medium.eot?#iefix') format('eot'),
+    url('../fonts/stolzl_w00_medium.woff2') format('woff2'),
+    url('../fonts/stolzl_w00_medium.woff') format('woff'),
+    url('../fonts/stolzl_w00_medium.ttf') format('truetype'),
+    url('../fonts/stolzl_w00_medium.svg#3e145975-2bf8-4a99-a341-fa89742af631') format('svg');
+}
+
+
+// Merriweather is an open source, old fashioned book type font, designed by Eben Sorkin in 2010. It is a workhorse text type family made specifically for screens, with deliberately high x-height, low variation of letter widths, low contrast and heavy simple shapes for serifs and terminals.
+@font-face {
+  font-family: 'merriweather';
+  src: url('../fonts/merriweather-light-webfont.woff2') format('woff2'),
+    url('../fonts/merriweather-light-webfont.woff') format('woff'),
+    url('../fonts/merriweather-light-webfont.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweathersans-bold';
+  src: url('../fonts/merriweathersans-bold-webfont.woff2') format('woff2'),
+    url('../fonts/merriweathersans-bold-webfont.woff') format('woff'),
+    url('../fonts/merriweathersans-bold-webfont.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweathersans-light';
+  src: url('../fonts/merriweathersans-light-webfont.woff2') format('woff2'),
+    url('../fonts/merriweathersans-light-webfont.woff') format('woff'),
+    url('../fonts/merriweathersans-light-webfont.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweathersans-regular';
+  src: url('../fonts/merriweathersans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/merriweathersans-regular-webfont.woff') format('woff'),
+    url('../fonts/merriweathersans-regular-webfont.ttf') format('truetype');
+  font-style: normal;
+}

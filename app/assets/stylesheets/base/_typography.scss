@@ -1,0 +1,108 @@
+* {
+  text-decoration-skip: ink;
+}
+
+body {
+  @include font('light', 'small');
+  color: colour('black');
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: all .2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: colour('blue');
+    text-decoration: none;
+  }
+}
+
+p,
+ul,
+ol {
+  a {
+    @include font('regular', 'small');
+  }
+
+  strong {
+    @include font-family('bold');
+  }
+}
+
+article {
+  p {
+    @include spacing('margin-bottom', 'space-s');
+  }
+
+  ol,
+  ul {
+    @include spacing('margin-bottom', 'space-s');
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  ol {
+    list-style-type: decimal;
+    margin-left: 26px;
+  }
+}
+
+h1 {
+  @include spacing('margin-bottom', 'space-l');
+}
+
+h2 {
+  @include spacing('margin-bottom', 'space-s');
+}
+
+.type--small,
+.type--medium,
+.type--large,
+.type--xlarge {
+  strong {
+    @include font-family('stolzl-display');
+  }
+}
+
+/* need to use @font mixin to get responsive font sizes */
+.type--small {
+  @include font('merriweather', 'small');
+}
+
+.type--medium {
+  @include font('merriweather', 'medium');
+}
+
+.type--large {
+  @include font('merriweather', 'large');
+}
+
+.type--xlarge {
+  @include font('merriweather', 'xlarge');
+}
+
+.type--light {
+  @include font-family('light');
+}
+
+.type--bold {
+  @include font-family('stolzl');
+}
+
+.type--boldcaps {
+  @include font-family('stolzl');
+  text-transform: uppercase;
+}
+
+.type--alignright {
+  text-align: right;
+}
+
+.type--aligncenter {
+  text-align: center;
+}

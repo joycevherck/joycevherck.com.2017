@@ -1,0 +1,91 @@
+$container-width: 1440px;
+$grid-width: 1120px;
+$column-width: 1fr;
+$column-gap: 33px;
+$column-width-fallback: 8.3333%;
+
+$space-xs: 16px;
+$space-s: 32px;
+$space-m: 64px;
+$space-l: 96px;
+$space-xl: 160px;
+
+$space-mb-xs: 8px;
+$space-mb-s: 16px;
+$space-mb-m: 32px;
+$space-mb-l: 64px;
+$space-mb-xl: 112px;
+
+// stylelint-disable
+$spacing: (
+  'space-xs': (space: $space-xs,
+    breakpoints: (
+      tablet: (space: $space-mb-xs)
+    )),
+  'space-s': (space: $space-s,
+    breakpoints: (
+      tablet: (space: $space-mb-s)
+    )),
+  'space-m': (space: $space-m,
+    breakpoints: (
+      tablet: (space: $space-mb-m)
+    )),
+  'space-l': (space: $space-l,
+    breakpoints: (
+      tablet: (space: $space-mb-l)
+    )),
+  'space-xl': (space: $space-xl,
+    breakpoints: (
+      tablet: (space: $space-mb-xl)
+    ))
+);
+// stylelint-enable
+
+$colours: (
+  'black': #333333,
+  'white': #fff,
+);
+
+$breakpoints: (
+  'container': $container-width - 1,
+  'grid': $grid-width + 10,
+  'large': 1024px,
+  'medium': 940px,
+  'tablet': 800px,
+  'mobile': 480px
+);
+
+$font-stacks: (
+  'stolzl': (font-family: ('stolzl', Arial, sans-serif), font-weight: 400),
+  'stolzl-display': (font-family: ('stolzl-display', Arial, sans-serif), font-weight: 400),
+  'merriweather': (font-family: ('merriweather', Georgia, serif), font-weight: 400),
+  'light': (font-family: ('merriweathersans-light', Arial, serif), font-weight: 400),
+  'regular': (font-family: ('merriweathersans-regular', Arial, serif), font-weight: 400),
+  'bold': (font-family: ('merriweathersans-bold', Arial, serif), font-weight: 400)
+);
+
+// stylelint-disable
+$font-sizes: (
+  'small': (font-size: 20, line-height: 2,
+    breakpoints: (
+      tablet: (font-size: 16, line-height: 2.25)
+    )),
+  'medium': (font-size: 32, line-height: 1.56,
+    breakpoints: (
+      tablet: (font-size: 26, line-height: 1.69)
+    )),
+  'large': (font-size: 40, line-height: 1.75,
+    breakpoints: (
+      tablet: (font-size: 32, line-height: 1.68)
+    )),
+  'xlarge': (font-size: 54, line-height: 1.29,
+    breakpoints: (
+      tablet: (font-size: 44, line-height: 1.36)
+    ))
+);
+// stylelint-enable
+
+// Empty map for respond-to and font mixin
+// Override in component Sass files
+$tweakpoints: ();
+$font-tweaks: ();
