@@ -3,7 +3,7 @@
 }
 
 body {
-  @include font('light', 'small');
+  @include font('regular', 'small');
   color: colour('black');
 }
 
@@ -60,42 +60,29 @@ h2 {
   @include spacing('margin-bottom', 'space-s');
 }
 
-.type--small,
-.type--medium,
-.type--large,
-.type--xlarge {
-  strong {
-    @include font-family('stolzl-display');
-  }
-}
-
 /* need to use @font mixin to get responsive font sizes */
 .type--small {
-  @include font('merriweather', 'small');
+  @include font('regular', 'small');
 }
 
 .type--medium {
-  @include font('merriweather', 'medium');
+  @include font('regular', 'medium');
 }
 
 .type--large {
-  @include font('merriweather', 'large');
+  @include font('regular', 'large');
 }
 
 .type--xlarge {
-  @include font('merriweather', 'xlarge');
-}
-
-.type--light {
-  @include font-family('light');
+  @include font('regular', 'xlarge');
 }
 
 .type--bold {
-  @include font-family('stolzl');
+  @include font-family('bold');
 }
 
 .type--boldcaps {
-  @include font-family('stolzl');
+  @include font-family('bold');
   text-transform: uppercase;
 }
 

@@ -4,17 +4,17 @@ $column-width: 1fr;
 $column-gap: 33px;
 $column-width-fallback: 8.3333%;
 
-$space-xs: 16px;
-$space-s: 32px;
-$space-m: 64px;
-$space-l: 96px;
-$space-xl: 160px;
+$space-xs: 8px;
+$space-s: 16px;
+$space-m: 32px;
+$space-l: 64px;
+$space-xl: 96px;
 
 $space-mb-xs: 8px;
 $space-mb-s: 16px;
 $space-mb-m: 32px;
 $space-mb-l: 64px;
-$space-mb-xl: 112px;
+$space-mb-xl: 96px;
 
 // stylelint-disable
 $spacing: (
@@ -56,12 +56,8 @@ $breakpoints: (
 );
 
 $font-stacks: (
-  'stolzl': (font-family: ('stolzl', Arial, sans-serif), font-weight: 400),
-  'stolzl-display': (font-family: ('stolzl-display', Arial, sans-serif), font-weight: 400),
-  'merriweather': (font-family: ('merriweather', Georgia, serif), font-weight: 400),
-  'light': (font-family: ('merriweathersans-light', Arial, serif), font-weight: 400),
-  'regular': (font-family: ('merriweathersans-regular', Arial, serif), font-weight: 400),
-  'bold': (font-family: ('merriweathersans-bold', Arial, serif), font-weight: 400)
+  'regular': (font-family: ('Droid Sans', Arial, serif), font-weight: 400),
+  'bold': (font-family: ('Droid Sans', Arial, serif), font-weight: 700)
 );
 
 // stylelint-disable
