@@ -1,0 +1,14 @@
+.shape {
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+  width: 350px;
+  height: 250px;
+  position: relative;
+
+  img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

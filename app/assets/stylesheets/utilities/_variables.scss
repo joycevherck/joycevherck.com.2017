@@ -56,13 +56,14 @@ $breakpoints: (
 );
 
 $font-stacks: (
-  'regular': (font-family: ('Droid Sans', Arial, serif), font-weight: 400),
-  'bold': (font-family: ('Droid Sans', Arial, serif), font-weight: 700)
+  'regular': (font-family: ('Open Sans', Arial, serif), font-weight: 400),
+  'bold': (font-family: ('Open Sans', Arial, serif), font-weight: 700),
+  'italic': (font-family: ('Open Sans', Arial, serif), font-weight: 400, font-style: italic)
 );
 
 // stylelint-disable
 $font-sizes: (
-  'small': (font-size: 20, line-height: 2,
+  'small': (font-size: 18, line-height: 1.7,
     breakpoints: (
       tablet: (font-size: 16, line-height: 2.25)
     )),
