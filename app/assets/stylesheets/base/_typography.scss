@@ -57,6 +57,7 @@ h1 {
 
 h2 {
   @include spacing('margin-bottom', 'space-s');
+  color: colour('red');
 }
 
 /* need to use @font mixin to get responsive font sizes */

@@ -1,16 +1,12 @@
 header {
   @include clearfix;
   position: relative;
-
-  .shape  {
-    @include spacing('margin-top', 'space-s');
-    width: 50%;
-    float: right;
-  }
 }
 
 .header__intro {
   @include spacing('padding', 'space-l');
+  position: absolute;
+  top: 15%;
+  color: colour('white');
   width: 50%;
-  float: left;
 }

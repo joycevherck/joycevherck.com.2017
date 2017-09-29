@@ -1,0 +1,31 @@
+.item {
+  @include clearfix;
+  position: relative;
+}
+
+.item__shape {
+  float: left;
+
+  .item--right & {
+    float: right;
+  }
+}
+
+.item__desc {
+  @include spacing('padding', 'space-m');
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+  background-color: colour('white');
+  margin-top: $space-m;
+  margin-left: -$space-xl;
+  float: left;
+  width: 50%;
+  position: relative;
+  z-index: 10;
+
+  .item--right & {
+    float: right;
+    text-align: right;
+    margin-top: $space-xl;
+    margin-right: -$space-xl;
+  }
+}
