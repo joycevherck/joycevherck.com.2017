@@ -10,13 +10,13 @@
  # http://craftcms.com/docs/routing
  #}
 
-{% extends "_layout" %}
-{% set title = "News" %}
+{% extends "layout/base" %}
+{% set title = "Blog" %}
 
 {% block content %}
-	<h1>News</h1>
+	<h1>Blog</h1>
 
-	{% for entry in craft.entries.section('news').find() %}
+	{% for entry in craft.entries.section('blog').find() %}
 		<article>
 			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
 			<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
