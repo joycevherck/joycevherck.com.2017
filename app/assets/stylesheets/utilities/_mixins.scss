@@ -37,6 +37,7 @@
       font-family: map-get($font-stack, font-family) !important;
     }
     font-weight: map-get($font-stack, font-weight);
+    font-style: map-get($font-stack, font-style);
   } @else {
     @error 'The font family '#{$font-stack}' does not exist in the list of font families!';
   }

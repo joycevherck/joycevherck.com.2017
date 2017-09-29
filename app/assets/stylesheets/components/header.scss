@@ -1,0 +1,16 @@
+header {
+  @include clearfix;
+  position: relative;
+
+  .shape  {
+    @include spacing('margin-top', 'space-s');
+    width: 50%;
+    float: right;
+  }
+}
+
+.header__intro {
+  @include spacing('padding', 'space-l');
+  width: 50%;
+  float: left;
+}
