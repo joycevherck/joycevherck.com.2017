@@ -23,3 +23,20 @@
     max-width: 1440px;
   }
 }
+
+.shape--divider {
+  background-color: colour('green');
+  width: 100%;
+  height: 600px;
+
+  img {
+    max-width: 1440px;
+  }
+}
+
+.shape--footer {
+  clip-path: polygon(0 45%, 100% 0, 100% 100%, 0% 100%);
+  background-color: colour('red');
+  width: 100%;
+  height: 200px;
+}

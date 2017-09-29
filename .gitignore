@@ -4,6 +4,4 @@
 app/public/assets
 Desktop.ini
 node_modules
-**/generated/_icons.sass
 npm-debug.log
-extras
