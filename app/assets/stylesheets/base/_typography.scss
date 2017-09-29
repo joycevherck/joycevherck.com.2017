@@ -19,6 +19,10 @@ a {
   }
 }
 
+p {
+  @include spacing('margin-bottom', 'space-s');
+}
+
 p,
 ul,
 ol {
@@ -31,32 +35,25 @@ ol {
   }
 }
 
-article {
-  p {
-    @include spacing('margin-bottom', 'space-s');
-  }
+ol,
+ul {
+  @include spacing('margin-bottom', 'space-s');
+}
 
-  ol,
-  ul {
-    @include spacing('margin-bottom', 'space-s');
-  }
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
 
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-
-  ol {
-    list-style-type: decimal;
-    margin-left: 26px;
-  }
+ol {
+  list-style-type: decimal;
+  margin-left: 26px;
 }
 
 h1 {
 }
 
 h2 {
-  @include spacing('margin-bottom', 'space-s');
   color: colour('red');
 }
 

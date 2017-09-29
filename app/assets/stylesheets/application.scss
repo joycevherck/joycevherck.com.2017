@@ -6,11 +6,13 @@
 @import 'vendor/reset';
 
 // base
+@import 'base/background';
 @import 'base/fonts';
 @import 'base/layout';
 @import 'base/typography';
 
 // layouts
+@import 'layouts/grid';
 
 // components
 @import 'components/header';

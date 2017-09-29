@@ -1,31 +1,36 @@
 .item {
-  @include clearfix;
   position: relative;
+  grid-column: span 2;
 }
 
-.item__shape {
-  float: left;
-
-  .item--right & {
-    float: right;
-  }
+.item__image img {
+  width: 100%;
+  display: block;
 }
 
 .item__desc {
-  @include spacing('padding', 'space-m');
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
-  background-color: colour('white');
-  margin-top: $space-m;
-  margin-left: -$space-xl;
-  float: left;
-  width: 50%;
-  position: relative;
-  z-index: 10;
+  position: absolute;
+  left: $space-m;
+  bottom: $space-m;
 
-  .item--right & {
-    float: right;
-    text-align: right;
-    margin-top: $space-xl;
-    margin-right: -$space-xl;
+  h3,
+  p {
+    padding: $space-xs $space-s;
+  }
+
+  h3 {
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+    display: inline-block;
+    position: relative;
+    z-index: 5;
+  }
+
+  p {
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    margin-top: -10px;
+    margin-left: $space-s;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 4;
   }
 }
