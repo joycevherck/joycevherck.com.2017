@@ -14,13 +14,22 @@
   <meta name="keywords" content="{{ metaKeywords }}" />
   <meta property="og:title" content=" {{ title }}" />
   <meta property="og:description" content="{{ metaDescription }}" />
-  <meta property="og:image" content="{{ siteUrl }}assets/images/joyce.png" />
+  <meta property="og:image" content="{{ siteUrl }}public/assets/images/joyce.png" />
   <meta property="og:url" content="{{ entry.url }}" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" media="all" href="assets/stylesheets/application.css" />
+  <link rel="stylesheet" media="all" href="public/assets/stylesheets/application.css" />
 
-  {{ scriptIncludes.scriptIncludeHead | raw }}
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49972444-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-49972444-1');
+  </script>
+
 </head>
 <body>
 
