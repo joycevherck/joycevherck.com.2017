@@ -1,6 +1,8 @@
 header {
   @include clearfix;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .header__intro {
@@ -9,4 +11,9 @@ header {
   top: 15%;
   color: colour('white');
   width: 50%;
+
+  @include respond-to('mobile') {
+    top: 0;
+    width: 75%;
+  }
 }

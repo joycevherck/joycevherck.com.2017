@@ -10,11 +10,11 @@ $space-m: 32px;
 $space-l: 64px;
 $space-xl: 96px;
 
-$space-mb-xs: 8px;
-$space-mb-s: 16px;
-$space-mb-m: 32px;
-$space-mb-l: 64px;
-$space-mb-xl: 96px;
+$space-mb-xs: 6px;
+$space-mb-s: 8px;
+$space-mb-m: 16px;
+$space-mb-l: 32px;
+$space-mb-xl: 64px;
 
 // stylelint-disable
 $spacing: (
@@ -70,7 +70,7 @@ $font-stacks: (
 $font-sizes: (
   'small': (font-size: 18, line-height: 1.7,
     breakpoints: (
-      tablet: (font-size: 16, line-height: 2.25)
+      tablet: (font-size: 16, line-height: 2)
     )),
   'medium': (font-size: 32, line-height: 1.56,
     breakpoints: (

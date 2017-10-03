@@ -13,6 +13,11 @@
   left: $space-m;
   bottom: $space-m;
 
+  @include respond-to('mobile') {
+    left: $space-mb-m;
+    bottom: -$space-mb-m;
+  }
+
   h3,
   p {
     padding: $space-xs $space-s;
@@ -32,5 +37,9 @@
     margin-bottom: 0;
     position: relative;
     z-index: 4;
+
+    @include respond-to('tablet') {
+      @include font-size(14);
+    }
   }
 }

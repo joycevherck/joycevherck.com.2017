@@ -2,3 +2,27 @@ footer {
   text-align: right;
   color: colour('white');
 }
+
+.footer__wrapper {
+  @include spacing('padding-top', 'space-l');
+  @include spacing('padding-right', 'space-l');
+}
+
+.footer__social {
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer__social-icon {
+  @include spacing('margin-left', 'space-s');
+  transition: fill .2s ease-in-out;
+  fill: colour('white');
+  width: 25px;
+  height: 25px;
+
+  &:hover,
+  &:focus {
+    fill: colour('black');
+  }
+}

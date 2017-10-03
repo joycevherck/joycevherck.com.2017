@@ -27,10 +27,29 @@
   {% block content %}{% endblock %}
 
   <footer class="shape shape--footer">
-    <div class="container">
+    {% include 'shared/social_icons_sprite' %}
+    <div class="footer__wrapper">
+      <div class="footer__social">
+        <a href="http://www.linkedin.com/in/joycevanherck" aria-label="LinkedIn">
+          <svg class="footer__social-icon">
+            <use xlink:href="#linkedin" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/joycevherck/" aria-label="Instagram">
+          <svg class="footer__social-icon">
+            <use xlink:href="#instagram" />
+          </svg>
+        </a>
+        <a href="https://www.twitter.com/joycevherck" aria-label="Twitter">
+          <svg class="footer__social-icon">
+            <use xlink:href="#twitter" />
+          </svg>
+        </a>
+      </div>
+      <a class="type--bold" href="mailto:hello@joycevherck.com">hello@joycevherck.com</a>
+
       <p>&copy; Joyce Van Herck</p>
 
-      <a class="type--bold" href="mailto:hello@joycevherck.com">hello@joycevherck.com</a>
     </div>
   </footer>
 

@@ -4,4 +4,9 @@
   grid-column-gap: $column-gap;
   grid-row-gap: $column-gap;
   margin: 0 auto;
+
+  @include respond-to('mobile') {
+    grid-template-columns: $column-width;
+    grid-column-gap: 0;
+  }
 }
